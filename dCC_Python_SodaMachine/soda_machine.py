@@ -57,7 +57,7 @@ class SodaMachine:
                 customer.add_coins_to_wallet(customer_payment)
                 self.return_inventory(selected_soda)
             else:
-                self.deposit_coins_into_register(customer_payment)
+                self.deposit_coins_into_register(customer_payment) 
                 customer.add_coins_to_wallet(customer_change)
                 customer.add_can_to_backpack(selected_soda)
                 end_message(selected_soda, change_value)
